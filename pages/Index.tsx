@@ -1,5 +1,4 @@
-"use client"
-
+import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { StatsSection } from "@/components/StatsSection";
 import { ArtistsMarquee } from "@/components/ArtistsMarquee";
@@ -14,10 +13,12 @@ import { NewsHighlight } from "@/components/NewsHighlight";
 import { Testimonials } from "@/components/Testimonials";
 import { AppDownload } from "@/components/AppDownload";
 import { Sidebar } from "@/components/Sidebar";
+import { Footer } from "@/components/Footer";
 
-export default function Home() {
+const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Header />
       <Hero />
 
       {/* Stats Section */}
@@ -88,6 +89,9 @@ export default function Home() {
       </div>
 
       <Testimonials />
+      <Footer />
     </div>
   );
-}
+};
+
+export default Index;
